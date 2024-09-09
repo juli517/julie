@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="/HTML/menu.css">
+</head>
+<body>
+    <header>
+            <nav class="navbar">
+                <img class="logo-2" src="/img/logo.svg" alt="">
+                <ul class="nav-links">
+                    <li><a href="inicio.html"> Inicio </a></li>
+                    <li><a href=""> Comprar </a></li>
+                    <li><a href="nosotros.html"> Nosotros </a></li>
+                </ul>
+            </nav>
+        <h1> Menú </h1>
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food1.png" alt="Plato 1">
+                    <div class="info-plato">
+                        <h2> Mega Burguer </h2>
+                        <p> Deliciosa combinación de sabores colombianos. </p>
+                        <p> $25,000 COP </p>
+                        <button class="select-btn" onclick="selectDish('Mega Burguer', 25000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food2.png" alt="Plato 2">
+                    <div class="info-plato">
+                        <h2> Super Sandwich Pro </h2>
+                        <p>Una explosión de sabores frescos y tropicales.</p>
+                        <p>$28,000 COP</p>
+                        <button class="select-btn" onclick="selectDish('Super Sandwich Pro', 28000)"> Seleccionar </button>
+                        </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food3.png" alt="Plato 3">
+                    <div class="info-plato">
+                        <h2> El Sandwich Mortal </h2>
+                        <p> Un plato tradicional con un toque moderno. </p>
+                        <p>$30,000 COP</p>
+                        <button class="select-btn" onclick="selectDish('El Sandwich Mortal', 30000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food4.png" alt="Plato 4">
+                    <div class="info-plato">
+                        <h2> Lenteburrito "La Aniquiladora" </h2>
+                        <p> Sabores auténticos para los amantes de la comida. </p>
+                        <p> $32,000 COP </p>
+                        <button class="select-btn" onclick="selectDish('Lenteburrito - La Aniquiladora', 32000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food5.png" alt="Plato 5">
+                    <div class="info-plato">
+                        <h2> Avocado Burrito </h2>
+                        <p> Una fusión de ingredientes frescos y deliciosos.</p>
+                        <p> $27,000 COP </p>
+                        <button class="select-btn" onclick="selectDish('Avocado Burrito', 27000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food6.png" alt="Plato 6">
+                    <div class="info-plato">
+                        <h2> Burrito "paraiso oceanico verde" </h2>
+                        <p> El sabor perfecto para cualquier ocasión. </p>
+                        <p>$29,000 COP</p>
+                        <button class="select-btn" onclick="selectDish('Burrito del Paraíso Verde', 29000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food7.png" alt="Plato 7">
+                    <div class="info-plato">
+                        <h2> Plato costeño "Nojoda" </h2>
+                        <p> Una mezcla exquisita de especias y hierbas. </p>
+                        <p>$31,000 COP</p>
+                        <button class="select-btn" onclick="selectDish('Plato costeño - Nojoda', 31000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food8.png" alt="Plato 8">
+                    <div class="info-plato">
+                        <h2> Chuzarnes </h2>
+                        <p> Sabores intensos y auténticos en cada bocado. </p>
+                        <p> $33,000 COP </p>
+                        <button class="select-btn" onclick="selectDish('Chuzarnes', 33000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="cuadro">
+                    <img src="/img/food9.png" alt="Plato 9">
+                    <div class="info-plato">
+                        <h2> Pizza </h2>
+                        <p> Una experiencia gastronómica única. </p>
+                        <p>$35,000 COP</p>
+                        <button class="select-btn" onclick="selectDish('Pizza', 35000)"> Seleccionar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)"> &#10094; </button>
+        <button class="next" onclick="moveSlide(1)"> &#10095; </button>
+    </div>
+
+    <div class="selected-dish">
+        <h2> Plato Seleccionado: </h2>
+        <p id="selected-dish"> Ninguno </p>
+        <h2> Total:</h2>
+        <p id="total-price"> $0 COP </p>
+    </div>
+
+    
+        <button class="comprar"> Comprar </button>
+                
+   
+
+
+    <script src="menu.js"> </script>
+</body>
+</html>
